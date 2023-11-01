@@ -15,10 +15,14 @@ import About from './pages/About'
 import Signin from './pages/Signin'
 import WishList from './pages/WishList'
 import Navmain from './components/Navmain'
+import AppContextProvider from './context/AppContext'
+import { QueryClient, QueryClientProvider} from 'react-query'
 
 function App() {
   return (
     <BrowserRouter>
+    <QueryClientProvider client={new QueryClient()}>
+    <AppContextProvider>
       <div className='text-base bg-tertiary w-full h-screen'>
         <Navbar />
         <Navmain />
@@ -38,6 +42,8 @@ function App() {
           <Route path='/wishlist' element={ <WishList /> } />
         </Routes>
       </div>
+    </AppContextProvider>
+    </QueryClientProvider>
     </BrowserRouter>
   )
 }
