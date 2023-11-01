@@ -6,7 +6,7 @@ const Recent = () => {
     const getFeaturedCars = () => {
         return axios.get("http://localhost:5001/Recent")
     }
-    const {data, isLoading, isError, error } = useQuery('featured', getFeaturedCars, { staleTime: 30000 })
+    const {data, isLoading, isError, error } = useQuery('featured', getFeaturedCars)
 
     if( isLoading ) {
         return <div className='text-center mt-3 text-2xl font-bold'>Loading . . .</div>
