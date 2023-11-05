@@ -1,6 +1,6 @@
 import React from 'react'
 import { useQuery } from 'react-query'
-import axios  from 'Axios'
+import axios  from 'axios'
 import {MdVerified} from 'react-icons/md'
 
 const Featured = () => {

@@ -46,15 +46,17 @@ function Navbar() {
             </div>
         </div>
         <div className='w-full bg-primary flex flex-row justify-between items-center p-4 px-5 md:hidden'>
-            <div className='text-tertiary text-base flex font-bold'>
-                <p>Call:+254718304580</p>
+            <div className='text-tertiary text-2xl flex font-bold'>
+                <Link to='/'>
+                    <h1>RidesAuto</h1>
+                </Link>
             </div>
             <div onClick={() => setMenu(!menu)}>
                 { menu ? <AiOutlineClose color='white' size={20} /> : <LuMenu color='white' size={20} />}
             </div>
         </div>
         { menu && 
-            <div className='bg-white h-auto relative md:hidden p-3 space-y-10'>
+            <div className='bg-white max-h-screen relative md:hidden p-3 space-y-10'>
                 <section className='flex flex-row space-x-1'>
                     <div className='w-1/2 h-64 p-1 rounded-md'>
                         <h4 className='font-bold'>Rides Cars</h4>
