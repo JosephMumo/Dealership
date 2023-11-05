@@ -56,7 +56,7 @@ function Navbar() {
             </div>
         </div>
         { menu && 
-            <div className='bg-white max-h-screen relative md:hidden p-3 space-y-10'>
+            <div className='bg-white max-h-screen relative md:hidden p-3 space-y-10 overflow-y-hidden'>
                 <section className='flex flex-row space-x-1'>
                     <div className='w-1/2 h-64 p-1 rounded-md'>
                         <h4 className='font-bold'>Rides Cars</h4>

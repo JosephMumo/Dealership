@@ -22,7 +22,7 @@ const Footer = () => {
                     Sign up to the Rides Auto newsletter to receive monthly updates in your inbox. We have exclusive deals, 
                     fuel vouchers, campaigns, and expert-written tips to help you keep your car in excellent shape.
                 </p>
-                <button className='bg-primary rounded-full p-1 px-3 text-white mt-2'>Subscribe</button>
+                <button className='bg-secondary rounded-full p-1 px-3 text-basic mt-2'>Subscribe</button>
             </section>
         </div>
         <div className='bg-secondary p-7 md:p-10 grid grid-cols-1 md:grid-cols-2 place-items-center md:h-[250px]'>
