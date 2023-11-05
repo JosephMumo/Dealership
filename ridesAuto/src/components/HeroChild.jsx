@@ -1,0 +1,17 @@
+import React from 'react'
+
+const HeroChild = (props) => {
+  return (
+    <div className=' grid place-items-center py-3 md:p-10'>
+        <div className='w-24 md:w-28 h-24 md:h-28 bg-tertiary rounded-full grid place-items-center mx-auto'>
+            <div className='w-12 md:w-16 h-12 md:h-16 bg-secondary rounded-full grid place-items-center'>
+                {props.icon}
+            </div>
+        </div>
+        <h2 className='my-5 font-bold text-lg'>{props.title}</h2>
+        <p className='text-center'>{props.description}</p>
+    </div>
+  )
+}
+
+export default HeroChild
