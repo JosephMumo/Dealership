@@ -10,8 +10,8 @@ const Landing = () => {
         <div className={ menu ? 'hidden' :'absolute w-full md:w-1/2 h-screen md:h-[550px] top-11 md:top-24 text-white font-bold flex flex-col align-center my-48 md:my-36 px-10 md:px-16'}>
           <h1 className='text-3xl md:text-4xl'>Where Every Mile Feels<br /> Like a Pleasure – Explore Our <br /> Premium Car Collection Now</h1>
           <section className='flex flex-row items-center text-white my-7 space-x-2 md:space-x-4'>
-            <button className='bg-primary p-2 px-4 rounded-3xl'>Browse Cars</button>
-            <button className='bg-inherit p-2 px-4 rounded-3xl outline-dotted hover:outline outline-primary'>Sell your car</button>
+            <button className='bg-white text-black p-2 px-4 rounded-3xl'>Browse Cars</button>
+            <button className='bg-inherit p-2 px-4 rounded-3xl outline-dotted hover:outline outline-white'>Sell your car</button>
           </section>
         </div>
     </div>

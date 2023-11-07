@@ -5,11 +5,11 @@ import { PiTiktokLogoThin } from 'react-icons/pi'
 const Footer = () => {
   return (
     <>
-        <div className='bg-tertiary p-7 md:p-10 grid grid-cols-1 md:grid-cols-2 place-items-center md:h-[250px]'>
+        <div className='bg-neutral-100 p-7 md:p-10 grid grid-cols-1 md:grid-cols-2 place-items-center md:h-[250px]'>
             <section className='w-full md:w-[80%] p-2 my-2'>
                 <h3 className='text-basic text-2xl font-bold'>About Rides</h3>
                 <br />
-                <p className='text-xs text-justify'>
+                <p className=' text-justify'>
                     Welcome to Rides Auto, where passion for automobiles meets exceptional service. Our mission is to offer a
                     curated selection of pre-owned and new cars, ensuring that each vehicle meets our rigorous standards for performance,
                     safety, and reliability. 
@@ -18,14 +18,14 @@ const Footer = () => {
             <section className='w-full md:w-[80%] p-2 my-2'>
                 <h3 className='text-basic text-2xl font-bold'>Rides Newsletter</h3>
                 <br />
-                <p className='text-xs text-justify'>
+                <p className='text-justify'>
                     Sign up to the Rides Auto newsletter to receive monthly updates in your inbox. We have exclusive deals, 
                     fuel vouchers, campaigns, and expert-written tips to help you keep your car in excellent shape.
                 </p>
-                <button className='bg-secondary rounded-full p-1 px-3 text-basic mt-2'>Subscribe</button>
+                <button className='bg-black rounded-full p-1 px-4 text-white my-3'>Subscribe</button>
             </section>
         </div>
-        <div className='bg-secondary p-7 md:p-10 grid grid-cols-1 md:grid-cols-2 place-items-center md:h-[250px]'>
+        <div className='bg-neutral-100 p-7 md:p-10 grid grid-cols-1 md:grid-cols-2 place-items-center md:h-[250px]'>
             <section className='w-full md:w-[80%] p-2 my-2'>
                 <h3 className='text-basic text-2xl font-bold'>Help and Support</h3>
                 <br />

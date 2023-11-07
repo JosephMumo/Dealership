@@ -17,6 +17,7 @@ import WishList from './pages/WishList'
 import Navmain from './components/Navmain'
 import AppContextProvider from './context/AppContext'
 import { QueryClient, QueryClientProvider} from 'react-query'
+import CarDescription from './pages/CarDescription'
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path='/about' element={ <About /> } />
           <Route path='/signin' element={ <Signin /> } />
           <Route path='/wishlist' element={ <WishList /> } />
+          <Route path='/description' element={ <CarDescription /> } />
         </Routes>
       </div>
     </AppContextProvider>
