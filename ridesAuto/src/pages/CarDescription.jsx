@@ -67,7 +67,7 @@ const CarDescription = () => {
                         </div>
                         <div className='flex items-center space-x-1'>
                             <MdOutlineVerifiedUser />
-                            <p>Vehicle available for viewing upon reques</p>
+                            <p>Vehicle available for viewing</p>
                         </div>
                     </section>
                 </div>
