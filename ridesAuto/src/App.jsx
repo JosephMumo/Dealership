@@ -24,7 +24,7 @@ function App() {
     <BrowserRouter>
     <QueryClientProvider client={new QueryClient()}>
     <AppContextProvider>
-      <div className='text-base bg-tertiary w-full h-screen'>
+      <div className='text-base bg-neutral-50 w-full h-screen'>
         <Navbar />
         <Navmain />
         <Routes>

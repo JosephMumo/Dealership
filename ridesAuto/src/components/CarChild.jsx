@@ -11,9 +11,11 @@ const CarChild = ({id, img, year, title, name, milage, capacity, transmission, f
         navigate('/description')
         
     }
+    const number = price
+    const formattedPrice = number.toLocaleString("en-US")
   return (
-    <div className='bg-white w-80 md:w-72 h-80 mt-5 group cursor-pointer p-3' onClick={() => descFunc({id,img, year, title, name, milage, capacity, transmission, fuel, price, desc})}>
-        <img src={img} alt='cars' className='w-80 md:w-72 h-1/2 object-cover' />
+    <div className='bg-white w-80 md:w-72 h-80 mt-5 group cursor-pointer shadow-2xl rounded-lg p-3' onClick={() => descFunc({id,img, year, title, name, milage, capacity, transmission, fuel, price, desc})}>
+        <img src={img} alt='cars' className='w-80 md:w-72 h-1/2 object-cover first-letter rounded-lg' />
         <section className='flex space-x-1 mx-3'>
             <p>{year}</p>
             <p>{title}</p>
@@ -32,7 +34,7 @@ const CarChild = ({id, img, year, title, name, milage, capacity, transmission, f
             <p>{fuel}</p>
         </section>
         <hr />
-        <h2 className='text-2xl font-bold m-3'>KES {price}</h2>
+        <h2 className='text-2xl font-bold m-3'>KES {formattedPrice}</h2>
     </div>
   )
 }
