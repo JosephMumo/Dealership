@@ -12,7 +12,7 @@ const CarChild = ({id, img, year, title, name, milage, capacity, transmission, f
         
     }
   return (
-    <div className='bg-white w-80 md:w-72 h-80 mt-5 group cursor-pointer' onClick={() => descFunc({id,img, year, title, name, milage, capacity, transmission, fuel, price, desc})}>
+    <div className='bg-white w-80 md:w-72 h-80 mt-5 group cursor-pointer p-3' onClick={() => descFunc({id,img, year, title, name, milage, capacity, transmission, fuel, price, desc})}>
         <img src={img} alt='cars' className='w-80 md:w-72 h-1/2 object-cover' />
         <section className='flex space-x-1 mx-3'>
             <p>{year}</p>
@@ -26,7 +26,7 @@ const CarChild = ({id, img, year, title, name, milage, capacity, transmission, f
             </section>
         </section>
         <section className='flex space-x-1 mx-3'>
-            <p>Milage:{milage} </p>
+            <p>{milage}kms</p>
             <p>{capacity}</p>
             <p>{transmission}</p>
             <p>{fuel}</p>

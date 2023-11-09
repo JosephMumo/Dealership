@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useQuery } from 'react-query'
 import axios  from 'Axios'
-import { useNavigate } from 'react-router-dom'
 import CarChild from './CarChild'
 
 const Featured = () => {
