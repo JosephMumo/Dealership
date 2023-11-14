@@ -1,10 +1,13 @@
-import React, { createContext, useState, useContext } from 'react'
+import React, { createContext, useState, useContext, useEffect } from 'react'
+
 
 export const AppContext = createContext()
 const AppContextProvider = ({children}) => {
     const [ menu, setMenu ] = useState(false)
     const [toggle, setToggle] = useState(false)
     const [ info, setInfo ] = useState([])
+
+    
   return (
     <AppContext.Provider value={{ menu, setMenu, toggle, setToggle, info, setInfo }}>
         {children}

@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {MdVerified} from 'react-icons/md'
 import { appFunc } from '../context/AppContext'
 import { useNavigate } from 'react-router-dom'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const CarChild = ({id, img, year, title, name, milage, capacity, transmission, fuel, price, desc}) => {
     const { setInfo } = appFunc()
@@ -11,10 +13,16 @@ const CarChild = ({id, img, year, title, name, milage, capacity, transmission, f
         navigate('/description')
         
     }
+    useEffect(() => {
+        AOS.init()
+        return( () => {
+          AOS.refresh()
+        })
+      }, [])
     const number = price
     const formattedPrice = number.toLocaleString("en-US")
   return (
-    <div className='bg-white w-80 md:w-72 h-80 mt-5 group cursor-pointer shadow-2xl rounded-lg p-3' onClick={() => descFunc({id,img, year, title, name, milage, capacity, transmission, fuel, price, desc})}>
+    <div data-aos='fade-up' className='bg-white w-80 md:w-72 h-80 mt-5 group cursor-pointer shadow-2xl rounded-lg p-3' onClick={() => descFunc({id,img, year, title, name, milage, capacity, transmission, fuel, price, desc})}>
         <img src={img} alt='cars' className='w-80 md:w-72 h-1/2 object-cover first-letter rounded-lg' />
         <section className='flex space-x-1 mx-3'>
             <p>{year}</p>
