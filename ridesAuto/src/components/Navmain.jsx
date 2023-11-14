@@ -5,7 +5,7 @@ const Navmain = () => {
   return (
     <div className=' hidden text-black md:flex md:flex-row md:justify-center md:items-center md:space-x-5 lg:space-x-12 md:py-3 md:px-2 lg:px-5 md:bg-white md:w-full'>
         <Link to='/'>
-            <h1 className='text-red-700 md:text-2xl lg:text-3xl '>RidesAuto</h1>
+            <h1 className='text-red-500 md:text-2xl lg:text-3xl '>RidesAuto</h1>
         </Link>
         <Link to='/cars'>
             <h4 className='text-lg font-bold'>Buy Car</h4>
