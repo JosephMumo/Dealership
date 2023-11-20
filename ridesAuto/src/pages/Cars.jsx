@@ -1,14 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useQuery} from 'react-query'
 import axios from 'axios'
 import CarChild from '../components/CarChild'
 import Footer from '../components/Footer'
+import { CiSearch } from "react-icons/ci"
+import { MdOutlineKeyboardBackspace } from "react-icons/md";
 
 function Cars() {
+  const [filteredCars, setFilteredCars] = useState([])
+  const [searchTerm, setSearchTerm] = useState('')
+  const [show, setShow] = useState(true)
   function getCars() {
     return axios.get("http://localhost:5001/all")
   }
   const {isLoading, data, isError, error } = useQuery('allCars', getCars)
+
+
+  const handleFilter = (e) => {
+    e.preventDefault()
+    const filtered = data?.data.filter(product => 
+      product.name.toLowerCase().includes(searchTerm.toLowerCase())
+    )
+    setFilteredCars(filtered)
+    setShow(false)
+  }
+  const handleBack = () => {
+    setShow(true)
+  }
   if(isLoading) {
     return(
       <div className='text-lg font-bold'>
@@ -22,18 +40,43 @@ function Cars() {
       </div>
     )
   }
+  
   return (
     <>
     <div className='w-full p-4'>
       <h1 className="font-bold text-2xl sm:text-center md:text-left mx-5 md:text-3xl md:mx-20">Find Your Car</h1>
+      <form className='flex items-center mx-5 my-3 w-48 text-center md:text-left md:mx-20'>
+        <input  type='text' placeholder='Search by model' onChange={(e) => setSearchTerm(e.target.value)} value={searchTerm} className=' outline-none border-black border-b-2' />
+        <button className='rounded-full hover:translate-y-1' onClick={handleFilter} >
+          <CiSearch size={18} color='black' />
+        </button>
+      </form>
+      { show
+       ?
+       null
+       : 
+        <div className='mx-5 md:mx-20 animate-bounce' onClick={handleBack}>
+          <MdOutlineKeyboardBackspace />
+        </div>
+      }
     </div>
     <div className='w-full h-auto p-12 md:p-14  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:mt-0 place-items-center'>
-        { data?.data.map(item => {
-            return ( <CarChild
+        { show ?
+        data?.data.map(item => {
+          return ( <CarChild
+              key={item.id}
+              {...item}
+          />)
+        })
+      : 
+        filteredCars.map(item => {
+          return ( <CarChild
                 key={item.id}
                 {...item}
-            />)
-        })}
+             />
+            )
+        })
+      }
     </div>
     <Footer />
     </>

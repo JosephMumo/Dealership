@@ -4,6 +4,7 @@ import { MdOutlineVerifiedUser } from 'react-icons/md'
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Footer from '../components/Footer'
+import Contact from '../components/Contact';
 
 const CarDescription = () => {
     const { info} = appFunc()
@@ -12,8 +13,8 @@ const CarDescription = () => {
 
   return (
     <>
-    <div className='w-full p-5 h-auto bg-neutral-50 '>
-        <section className='w-full px-5 md:px-10 text-justify md:my-5 my-3'>
+    <div className='w-full p-5 h-auto bg-white '>
+        <section className='w-full py-3 px-5 md:px-10 text-justify md:my-5 my-3'>
             <h1 className='text-3xl font-bold my-3'>{info.title} {info.name}</h1>
             <p className='text-lg md:mt-5'>{info.desc}</p>
         </section>
@@ -30,7 +31,7 @@ const CarDescription = () => {
                         <h1 className='text-3xl font-bold'>{info.price}</h1>
                         <sub className='font-bold'>KES</sub>
                     </div>
-                    <div className='h-1/2 bg-neutral-50 flex justify-between  px-1 py-7 md:px-5 text-sm md:text-lg'>
+                    <div className='h-1/2 bg-neutral-900 text-white flex justify-between  px-1 py-7 md:px-5 text-sm md:text-lg'>
                         <section>
                             <p>Mileage</p>
                             <h3 className='text-xs md:text-base font-semibold'>{info.milage}</h3>
@@ -74,6 +75,7 @@ const CarDescription = () => {
             </div>
         </section>
     </div>
+    <Contact />
     <Footer />
     </>
   )

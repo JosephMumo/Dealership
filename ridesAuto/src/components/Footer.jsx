@@ -33,7 +33,7 @@ const Footer = () => {
                 <p className='text-base text-justify'>Saturdays 9AM - 1PM</p>
                 <p className='text-base text-justify'>Sundays and Bank Holidays CLOSED</p>
                 <br />
-                <p className='text-sm text-justify'>** Prearranged viewings conducted outside of business hours</p>
+                <code className='text-sm text-justify'>** Prearranged viewings conducted outside of business hours **</code>
             </section>
             <section className='w-full md:w-[80%] p-2 my-2'>
                 <h3 className='text-basic text-2xl font-bold'>Contact</h3>
