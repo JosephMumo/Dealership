@@ -14,9 +14,9 @@ const CarDescription = () => {
   return (
     <>
     <div className='w-full p-5 h-auto bg-gradient-to-t from-basic '>
-        <section className='w-full py-3 px-5 md:px-10 text-justify md:my-5 my-3'>
+        <section className='w-1/2 py-3 px-5 md:px-10 text-justify md:my-5 my-3'>
             <h1 className='text-3xl font-bold my-3'>{info.title} {info.name}</h1>
-            <p className='text-lg md:mt-5'>{info.desc}</p>
+            <p className='md:mt-5'>{info.desc}</p>
         </section>
         <section className='w-full grid grid-cols-1  md:grid-cols-2 px-5 md:px-10 md:my-5 md:space-x-10'>
             <div className='w-full md:mt-5 md:p-2'>
