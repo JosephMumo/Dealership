@@ -7,9 +7,9 @@ const HeroChild = (props) => {
     AOS.init()
   }, [])
   return (
-    <div data-aos='flip-left' className=' grid place-items-center py-3 md:p-10'>
-        <div className='w-24 md:w-28 h-24 md:h-28 bg-basic rounded-full grid place-items-center mx-auto'>
-            <div className='w-12 md:w-16 h-12 md:h-16 bg-primary rounded-full grid place-items-center'>
+    <div data-aos='flip-left' className=' grid place-items-center py-3 md:p-10 hover:translate-y-2 cursor-pointer'>
+        <div className='w-20 md:w-20 h-20 md:h-20 bg-basic rounded-full grid place-items-center mx-auto'>
+            <div className='w-10 md:w-10 h-10 md:h-10 bg-primary rounded-full grid place-items-center'>
                 {props.icon}
             </div>
         </div>

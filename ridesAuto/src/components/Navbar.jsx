@@ -48,7 +48,7 @@ function Navbar() {
         <div className='w-full bg-primary flex flex-row justify-between items-center p-4 px-5 md:hidden'>
             <div className='text-white text-2xl flex font-bold'>
                 <Link to='/'>
-                    <h1>RidesAuto</h1>
+                    <h1>Exclusive</h1>
                 </Link>
             </div>
             <div onClick={() => setMenu(!menu)}>

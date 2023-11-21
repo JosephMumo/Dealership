@@ -21,7 +21,7 @@ const Landing = () => {
           <h1 data-aos='fade-right' className='text-3xl md:text-4xl '>Where Every Mile Feels<br /> Like a Pleasure – Explore Our <br /> Premium Car Collection Now</h1>
           <section data-aos='fade-up' className='flex flex-row items-center text-white my-7 space-x-2 md:space-x-4'>
             <button className='bg-primary text-white p-2 px-4 rounded-3xl'>Browse Cars</button>
-            <button className='bg-inherit p-2 px-4 rounded-3xl text-primary outline-dotted hover:outline outline-primary'>Sell your car</button>
+            <button className='bg-inherit p-2 px-4 rounded-3xl text-white outline-dotted hover:outline outline-primary'>Sell your car</button>
           </section>
         </div>
     </div>

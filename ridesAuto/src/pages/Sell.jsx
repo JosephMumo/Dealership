@@ -4,28 +4,28 @@ import ContactChild from "../components/ContactChild"
 import Footer from "../components/Footer"
 
 const Sell = () => {
-  const [ active, setActive ] = useState(false)
+  const [ active, setActive ] = useState(true)
   const [ active1, setActive1 ] = useState(false)
   const [ active2, setActive2 ] = useState(false)
 
   const handleActive = () => {
-    setActive(prev => !prev)
+    setActive(true)
     setActive1(false)
     setActive2(false)
   }
   const handleActive1 = () => {
-    setActive1(prev => !prev)
+    setActive1(true)
     setActive(false)
     setActive2(false)
   }
   const handleActive2 = () => {
-    setActive2(prev => !prev)
+    setActive2(true)
     setActive(false)
     setActive1(false)
   }
   return (
     <>
-    <div className='w-full p-4 min-h-screen'>
+    <div className='w-full p-4 bg-gradient-to-b from-basic'>
         <section className='sm:text-center md:text-left mx-5  md:mx-20 w-full md:w-1/3'>
           <h1 className='font-bold text-2xl md:text-3xl my-2'>Sell With Us</h1>
           <p className=''>We eliminate uncertainty and ensure that selling your 
@@ -58,7 +58,44 @@ const Sell = () => {
             />
             
           </section>
-          <section className='w-[90%] md:w-[45%] shadow-md'>2</section>
+          { active &&
+            <section className='w-[90%] md:w-[45%] shadow-md bg-white rounded-lg h-auto'>
+              <div className="w-full bg-primary h-16 p-5 rounded-t-lg">
+                <h2 className="text-white text-xl font-semi-bold">Car Details</h2>
+              </div>
+              <form className="p-4 grid place-items-center space-y-5">
+                <input type="text" placeholder='Car Registration' className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
+                <select name="make" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none">
+                  <option value="" disabled selected hidden>Make</option>
+                  <option>Toyota</option>
+                  <option>Subaru</option>
+                  <option>Nissan</option>
+                  <option>Volkswagen</option>
+                </select>
+                <select name="model" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none">
+                  <option value="" disabled selected hidden>Model</option>
+                  <option disabled selected hidden>No data available</option>
+                </select>
+                <input type="date" placeholder="Date of Registration" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
+                <input type="number" placeholder='Mileage' className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
+                <input type="number" placeholder='Reserve Price' className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
+              </form>
+            </section>
+          }
+          { active1 &&
+            <section className='w-[90%] md:w-[45%] shadow-md bg-white rounded-lg'>
+              <div className="w-full bg-primary h-16 p-5 rounded-t-lg">
+                <h2 className="text-white text-xl font-semi-bold">Car Photos</h2>
+              </div>
+            </section>
+          }
+          { active2 &&
+            <section className='w-[90%] md:w-[45%] shadow-md bg-white rounded-lg'>
+              <div className="w-full bg-primary h-16 p-5 rounded-t-lg">
+                <h2 className="text-white text-xl font-semi-bold">Owner Contact</h2>
+              </div>
+            </section>
+          }
         </div>
     </div>
     <Footer />

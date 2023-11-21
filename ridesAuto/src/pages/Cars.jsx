@@ -46,7 +46,7 @@ function Cars() {
     <div className='w-full p-4'>
       <h1 className="font-bold text-2xl sm:text-center md:text-left mx-5 md:text-3xl md:mx-20">Available Stock</h1>
       <form className='flex items-center space-x-2 mx-5 my-3 w-48 text-center md:text-left md:mx-20'>
-        <input  type='text' placeholder='Search by model' onChange={(e) => setSearchTerm(e.target.value)} value={searchTerm} className= 'bg-neutral-50 py-1 px-2 md:24 lg:w-64 outline-none' />
+        <input  type='text' placeholder='Search by model' onChange={(e) => setSearchTerm(e.target.value)} value={searchTerm} className= 'bg-basic py-1 px-2 md:24 lg:w-64 outline-none' />
         <button className='rounded-full hover:translate-y-1' onClick={handleFilter} >
           <CiSearch size={18} color='black' />
         </button>
@@ -60,7 +60,7 @@ function Cars() {
         </div>
       }
     </div>
-    <div className='w-full h-auto p-12 md:p-14  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:mt-0 place-items-center'>
+    <div className='w-full h-auto bg-gradient-to-t from-basic p-12 md:p-14  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:mt-0 place-items-center'>
         { show ?
         data?.data.map(item => {
           return ( <CarChild
