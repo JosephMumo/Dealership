@@ -22,7 +22,7 @@ const CarChild = ({id, img, year, title, name, milage, capacity, transmission, f
     const number = price
     const formattedPrice = number.toLocaleString("en-US")
   return (
-    <div className='bg-white w-80 md:w-72 h-80 mt-5 group cursor-pointer shadow-2xl rounded-lg p-3 hover:translate-1' onClick={() => descFunc({id,img, year, title, name, milage, capacity, transmission, fuel, price, desc})}>
+    <div className='bg-white w-80 md:w-72 h-80 mt-5 group cursor-pointer shadow-basic shadow-2xl rounded-lg p-3 transition ease-in-out delay-250 hover:scale-105' onClick={() => descFunc({id,img, year, title, name, milage, capacity, transmission, fuel, price, desc})}>
         <img src={img} alt='cars' className='w-80 md:w-72 h-1/2 object-cover first-letter rounded-lg' />
         <section className='flex space-x-1 mx-3'>
             <p>{year}</p>

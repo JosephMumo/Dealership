@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 
 const Contact = () => {
     const [ message, setMessage ] = useState([])
@@ -19,6 +20,10 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         setMessage(user)
+
+        axios.post("http://localhost:5001/Messages", user)
+        .then((res) => console.log(res))
+        .catch((err) => console.log(err))
         alert('message submitted!!')
 
         setUser({

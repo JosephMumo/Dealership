@@ -31,7 +31,7 @@ const CarDescription = () => {
                         <h1 className='text-3xl font-bold'>{info.price}</h1>
                         <sub className='font-bold'>KES</sub>
                     </div>
-                    <div className='h-1/2 bg-neutral-900 text-white flex justify-between  px-1 py-7 md:px-5 text-sm md:text-lg'>
+                    <div className='h-1/2 bg-black text-white flex justify-between  px-2 py-7 md:px-5 text-sm md:text-lg'>
                         <section>
                             <p>Mileage</p>
                             <h3 className='text-xs md:text-base font-semibold'>{info.milage}</h3>

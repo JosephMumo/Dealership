@@ -19,7 +19,7 @@ function Cars() {
   const handleFilter = (e) => {
     e.preventDefault()
     const filtered = data?.data.filter(product => 
-      product.name.toLowerCase().includes(searchTerm.toLowerCase())
+      product.title.toLowerCase().includes(searchTerm.toLowerCase())
     )
     setFilteredCars(filtered)
     setShow(false)
@@ -44,9 +44,9 @@ function Cars() {
   return (
     <>
     <div className='w-full p-4'>
-      <h1 className="font-bold text-2xl sm:text-center md:text-left mx-5 md:text-3xl md:mx-20">Find Your Car</h1>
-      <form className='flex items-center mx-5 my-3 w-48 text-center md:text-left md:mx-20'>
-        <input  type='text' placeholder='Search by model' onChange={(e) => setSearchTerm(e.target.value)} value={searchTerm} className=' outline-none border-black border-b-2' />
+      <h1 className="font-bold text-2xl sm:text-center md:text-left mx-5 md:text-3xl md:mx-20">Available Stock</h1>
+      <form className='flex items-center space-x-2 mx-5 my-3 w-48 text-center md:text-left md:mx-20'>
+        <input  type='text' placeholder='Search by model' onChange={(e) => setSearchTerm(e.target.value)} value={searchTerm} className= 'bg-neutral-50 py-1 px-2 md:24 lg:w-64 outline-none' />
         <button className='rounded-full hover:translate-y-1' onClick={handleFilter} >
           <CiSearch size={18} color='black' />
         </button>
@@ -56,7 +56,7 @@ function Cars() {
        null
        : 
         <div className='mx-5 md:mx-20 animate-bounce' onClick={handleBack}>
-          <MdOutlineKeyboardBackspace />
+          <MdOutlineKeyboardBackspace size={24} />
         </div>
       }
     </div>

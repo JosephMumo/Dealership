@@ -9,13 +9,13 @@ function Navbar() {
     const {menu, setMenu } = appFunc()
   return (
     <>
-        <div className='hidden md:w-full  text-tertiary bg-black md:flex md:flex-row'>
+        <div className='hidden md:w-full  text-white bg-primary md:flex md:flex-row'>
             <div className='w-1/3'></div>
             <div className=' w-2/3 flex flex-row justify-center p-2 lg:space-x-3 md:space-x-2'>
                 <Link to='/wishlist'>
                     <h1>Wishlist</h1>
                 </Link>
-                <Dropdown label='Processes' inline className='px-2 bg-black'>
+                <Dropdown label='Processes' inline className='px-2 bg-primary text-white '>
                     <Link to='/processes/buying'>
                         <Dropdown.Item>Buying</Dropdown.Item>
                     </Link>
@@ -26,7 +26,7 @@ function Navbar() {
                         <Dropdown.Item>Financing</Dropdown.Item>
                     </Link>
                 </Dropdown>
-                <Dropdown label='Resources' inline className='px-2 bg-black'>
+                <Dropdown label='Resources' inline className='px-2 bg-primary text-white'>
                     <Link to='/resources/faqs'>
                         <Dropdown.Item>FAQ's</Dropdown.Item>
                     </Link>
@@ -45,8 +45,8 @@ function Navbar() {
                 </Link>
             </div>
         </div>
-        <div className='w-full bg-black flex flex-row justify-between items-center p-4 px-5 md:hidden'>
-            <div className='text-tertiary text-2xl flex font-bold'>
+        <div className='w-full bg-primary flex flex-row justify-between items-center p-4 px-5 md:hidden'>
+            <div className='text-white text-2xl flex font-bold'>
                 <Link to='/'>
                     <h1>RidesAuto</h1>
                 </Link>
