@@ -5,7 +5,7 @@ import HeroChild from './HeroChild'
 
 const  Hero = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-3 py-5 px-24 space-y-5 md:space-y-0'>
+    <div className='grid grid-cols-1 md:grid-cols-3 py-5 px-24 space-y-5 md:space-y-0 text-black'>
         <HeroChild 
             icon={ <MdOutlineGppGood size={18} /> }
             title='Unrivaled Selection'
