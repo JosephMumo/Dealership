@@ -9,13 +9,13 @@ function Navbar() {
     const {menu, setMenu } = appFunc()
   return (
     <>
-        <div className='hidden md:w-full  text-white bg-primary md:flex md:flex-row'>
+        <div className='hidden md:w-full  text-white bg-secondary md:flex md:flex-row'>
             <div className='w-1/3'></div>
             <div className=' w-2/3 flex flex-row justify-center p-2 lg:space-x-3 md:space-x-2'>
                 <Link to='/wishlist'>
                     <h1>Wishlist</h1>
                 </Link>
-                <Dropdown label='Processes' inline className='px-2 bg-primary text-white '>
+                <Dropdown label='Processes' inline className='px-2 bg-secondary text-white '>
                     <Link to='/processes/buying'>
                         <Dropdown.Item>Buying</Dropdown.Item>
                     </Link>
@@ -26,7 +26,7 @@ function Navbar() {
                         <Dropdown.Item>Financing</Dropdown.Item>
                     </Link>
                 </Dropdown>
-                <Dropdown label='Resources' inline className='px-2 bg-primary text-white'>
+                <Dropdown label='Resources' inline className='px-2 bg-secondary text-white'>
                     <Link to='/resources/faqs'>
                         <Dropdown.Item>FAQ's</Dropdown.Item>
                     </Link>
@@ -45,10 +45,10 @@ function Navbar() {
                 </Link>
             </div>
         </div>
-        <div className='w-full bg-primary flex flex-row justify-between items-center p-4 px-5 md:hidden'>
+        <div className='w-full bg-secondary flex flex-row justify-between items-center p-4 px-5 md:hidden'>
             <div className='text-white text-2xl flex font-bold'>
                 <Link to='/'>
-                    <h1>Exclusive</h1>
+                    <h1>GariZen</h1>
                 </Link>
             </div>
             <div onClick={() => setMenu(!menu)}>
@@ -60,7 +60,7 @@ function Navbar() {
                 <section className='flex flex-row space-x-1'>
                     <div className='w-1/2 h-64 p-1 rounded-md'>
                         <h4 className='font-bold'>GariZen</h4>
-                        <section className='p-3 bg-neutral-50'>
+                        <section className='p-3 bg-basic'>
                             <Link to='/cars'>
                                 <h1>Browse cars</h1>
                             </Link>
@@ -71,7 +71,7 @@ function Navbar() {
                     </div>
                     <div className=' w-1/2 h-64 p-1 rounded-md'>
                         <h4 className='font-bold'>Processes</h4>
-                        <section className='p-3 bg-neutral-50'>
+                        <section className='p-3 bg-basic'>
                             <Link to='/processes/buying'>
                                 <h2>Buying</h2>
                             </Link>
@@ -87,7 +87,7 @@ function Navbar() {
                 <section className='bg-white flex flex-row space-x-1'>
                     <div className='w-1/2 h-64 p-1 rounded-md'>
                         <h4 className='font-bold'>Resources</h4>
-                        <section className='p-3 bg-neutral-50'>
+                        <section className='p-3 bg-basic'>
                             <Link to='/resources/faqs'>
                                 <h2>FAQ's</h2>
                             </Link>
@@ -101,7 +101,7 @@ function Navbar() {
                     </div>
                     <div className='w-1/2 h-64 p-1 rounded-md'>
                         <h4 className='font-bold'>About</h4>
-                        <section className='p-3 bg-neutral-50'>
+                        <section className='p-3 bg-basic'>
                             <Link to='/about'>
                                 <h2>About</h2>
                             </Link>

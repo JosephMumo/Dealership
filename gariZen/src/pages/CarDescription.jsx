@@ -14,7 +14,7 @@ const CarDescription = () => {
   return (
     <>
     <div className='w-full p-5 h-auto bg-gradient-to-t from-basic '>
-        <section className='w-1/2 py-3 px-5 md:px-10 text-justify md:my-5 my-3'>
+        <section className='md:w-1/2 w-full py-3 px-5 md:px-10 text-justify md:my-5 my-3'>
             <h1 className='text-3xl font-bold my-3'>{info.title} {info.name}</h1>
             <p className='md:mt-5'>{info.desc}</p>
         </section>
@@ -31,7 +31,7 @@ const CarDescription = () => {
                         <h1 className='text-3xl font-bold'>{info.price}</h1>
                         <sub className='font-bold'>KES</sub>
                     </div>
-                    <div className='h-1/2 bg-secondary text-white flex justify-between  px-2 py-7 md:px-5 text-sm md:text-lg'>
+                    <div className='h-1/2 bg-primary text-white flex justify-between  px-2 py-7 md:px-5 text-sm md:text-lg'>
                         <section>
                             <p>Mileage</p>
                             <h3 className='text-xs md:text-base font-semibold'>{info.milage}</h3>
@@ -51,7 +51,7 @@ const CarDescription = () => {
                     </div>
                     <div className='h-1/4 p-3 px-5 flex justify-between items-center'>
                         <p>Available on Request</p>
-                        <button className=' p-1 px-4 rounded-full bg-secondary text-white'>ViewRequest</button>
+                        <button className=' p-1 px-4 rounded-full bg-primary text-white'>ViewRequest</button>
                     </div>
                 </div>
                 <div className='rounded-lg shadow-lg h-52 bg-white p-3 px-5'>
