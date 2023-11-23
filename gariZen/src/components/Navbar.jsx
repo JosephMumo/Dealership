@@ -15,7 +15,7 @@ function Navbar() {
                 <Link to='/wishlist'>
                     <h1>Wishlist</h1>
                 </Link>
-                <Dropdown label='Processes' inline className='px-2 bg-secondary text-white '>
+                <Dropdown label='Processes' inline className='px-2 bg-secondary text-white z-11'>
                     <Link to='/processes/buying'>
                         <Dropdown.Item>Buying</Dropdown.Item>
                     </Link>
@@ -26,7 +26,7 @@ function Navbar() {
                         <Dropdown.Item>Financing</Dropdown.Item>
                     </Link>
                 </Dropdown>
-                <Dropdown label='Resources' inline className='px-2 bg-secondary text-white'>
+                <Dropdown label='Resources' inline className='px-2 bg-secondary text-white z-11'>
                     <Link to='/resources/faqs'>
                         <Dropdown.Item>FAQ's</Dropdown.Item>
                     </Link>
