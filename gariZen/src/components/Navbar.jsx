@@ -15,28 +15,12 @@ function Navbar() {
                 <Link to='/wishlist'>
                     <h1>Wishlist</h1>
                 </Link>
-                <Dropdown label='Processes' inline className='px-2 bg-secondary text-white z-11'>
-                    <Link to='/processes/buying'>
-                        <Dropdown.Item>Buying</Dropdown.Item>
-                    </Link>
-                    <Link to='/processes/selling'>
-                        <Dropdown.Item>Selling</Dropdown.Item>
-                    </Link>
-                    <Link to='/processes/financing'>
-                        <Dropdown.Item>Financing</Dropdown.Item>
-                    </Link>
-                </Dropdown>
-                <Dropdown label='Resources' inline className='px-2 bg-secondary text-white z-11'>
-                    <Link to='/resources/faqs'>
-                        <Dropdown.Item>FAQ's</Dropdown.Item>
-                    </Link>
-                    <Link to='/resources/glossary'>
-                        <Dropdown.Item>Glossary</Dropdown.Item>
-                    </Link>
-                    <Link to='/resources/blog'>
-                        <Dropdown.Item>Blog</Dropdown.Item>
-                    </Link>
-                </Dropdown>
+                <Link to='/faqs'>
+                        <h1>FAQ's</h1>
+                </Link>
+                <Link to='/blog'>
+                        <h1>Blog</h1>
+                </Link>
                 <Link to='/about'>
                     <h1>AboutUs</h1>
                 </Link>
@@ -67,41 +51,20 @@ function Navbar() {
                             <Link to='/wishlist'>
                                 <h1>Wishlist</h1>
                             </Link>  
+                            <Link to='/signin'>
+                                <h1>SignIn</h1>
+                            </Link>
                         </section>
                     </div>
                     <div className=' w-1/2 h-64 p-1 rounded-md'>
-                        <h4 className='font-bold'>Processes</h4>
+                    <h4 className='font-bold'>Resources</h4>
                         <section className='p-3 bg-basic'>
-                            <Link to='/processes/buying'>
-                                <h2>Buying</h2>
-                            </Link>
-                            <Link to='/processes/selling'>
-                                <h2>Selling</h2>
-                            </Link>
-                            <Link to='/processes/financing'>
-                                <h2>Financing</h2>
-                            </Link>
-                        </section>
-                    </div>
-                </section>
-                <section className='bg-white flex flex-row space-x-1'>
-                    <div className='w-1/2 h-64 p-1 rounded-md'>
-                        <h4 className='font-bold'>Resources</h4>
-                        <section className='p-3 bg-basic'>
-                            <Link to='/resources/faqs'>
+                            <Link to='/faqs'>
                                 <h2>FAQ's</h2>
                             </Link>
-                            <Link to='/resources/glossary'>
-                                <h2>Glossary</h2>
-                            </Link>
-                            <Link to='/resources/blog'>
+                            <Link to='/blog'>
                                 <h2>Blog</h2>
                             </Link>
-                        </section>
-                    </div>
-                    <div className='w-1/2 h-64 p-1 rounded-md'>
-                        <h4 className='font-bold'>About</h4>
-                        <section className='p-3 bg-basic'>
                             <Link to='/about'>
                                 <h2>About</h2>
                             </Link>
