@@ -7,16 +7,16 @@ const Footer = () => {
     <>
         <div className='bg-basic p-7 md:p-10 grid grid-cols-1 md:grid-cols-2 place-items-center md:h-[250px]'>
             <section className='w-full md:w-[80%] p-2 my-2'>
-                <h3 className='text-black text-2xl font-bold'>About Rides</h3>
+                <h3 className='text-black text-2xl font-bold'>About GariZen</h3>
                 <br />
                 <p className=' text-justify'>
-                    Welcome to Rides Auto, where passion for automobiles meets exceptional service. Our mission is to offer a
+                    Welcome to GariZen Motors, where passion for automobiles meets exceptional service. Our mission is to offer a
                     curated selection of pre-owned and new cars, ensuring that each vehicle meets our rigorous standards for performance,
                     safety, and reliability. 
                 </p>
             </section>
             <section className='w-full md:w-[80%] p-2 my-2'>
-                <h3 className='text-black text-2xl font-bold'>Rides Newsletter</h3>
+                <h3 className='text-black text-2xl font-bold'>GariZen Newsletter</h3>
                 <br />
                 <p className='text-justify'>
                     Sign up to the Rides Auto newsletter to receive monthly updates in your inbox. We have exclusive deals, 

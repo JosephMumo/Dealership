@@ -2,11 +2,13 @@ import { useState } from "react"
 import React from 'react'
 import ContactChild from "../components/ContactChild"
 import Footer from "../components/Footer"
+import ImageUploader from "../components/ImageUploader"
 
 const Sell = () => {
   const [ active, setActive ] = useState(true)
   const [ active1, setActive1 ] = useState(false)
   const [ active2, setActive2 ] = useState(false)
+  const [selectedImage, setSelectedImage] = useState('')
 
   const handleActive = () => {
     setActive(true)
@@ -34,7 +36,7 @@ const Sell = () => {
           </p>
         </section>
         <div className='mx-5 md:mx-20 w-full flex flex-col md:flex-row md:space-x-10 my-5 md:my-10'>
-          <section className='w-[90%] md:w-[45%]  flex flex-col  space-y-10'>
+          <section className='w-[90%] md:w-[45%]  flex flex-col space-y-10 mb-5 md:mb-0'>
             <ContactChild
               number = '1'
               name = 'Car Details'
@@ -87,6 +89,36 @@ const Sell = () => {
               <div className="w-full bg-primary h-16 p-5 rounded-t-lg">
                 <h2 className="text-white text-xl font-semi-bold">Car Photos</h2>
               </div>
+              <div className="space-y-5 p-2">
+                <div className="my-1 mx-1 w-[99%] h-20 py-1 px-5">
+                  <h4>Front</h4>
+                  <ImageUploader
+                    selectedImage={selectedImage}
+                    setSelectedImage={setSelectedImage}
+                  />
+                </div>
+                <div className="my-1 mx-1 w-[99%] h-20  py-1 px-5">
+                  <h4>Sides</h4>
+                  <ImageUploader
+                    selectedImage={selectedImage}
+                    setSelectedImage={setSelectedImage}
+                  />
+                </div>
+                <div className="my-1 mx-1 w-[99%] h-20  py-1 px-5">
+                  <h4>Rear</h4>
+                  <ImageUploader
+                    selectedImage={selectedImage}
+                    setSelectedImage={setSelectedImage}
+                  />
+                </div>
+                <div className="my-1 mx-1 w-[99%] h-20  py-1 px-5">
+                  <h4>Interior</h4>
+                  <ImageUploader
+                    selectedImage={selectedImage}
+                    setSelectedImage={setSelectedImage}
+                  />
+                </div>
+              </div>
             </section>
           }
           { active2 &&
@@ -94,6 +126,15 @@ const Sell = () => {
               <div className="w-full bg-primary h-16 p-5 rounded-t-lg">
                 <h2 className="text-white text-xl font-semi-bold">Owner Contact</h2>
               </div>
+              <form className="p-4 grid place-items-center space-y-5">
+                <input type="text" placeholder="First Name" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
+                <input type="text" placeholder="Last Name" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
+                <input type="phone" placeholder="Phone" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
+                <input type="email" placeholder="Email" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
+                <label htmlFor="checkbox" className="text-start">Read and Agreed to the Terms and Conditions.</label>
+                <input type="checkbox" id="checkbox" className="bg-basic" />
+                <button className="py-1 bg-primary text-white px-5 rounded-2xl">Submit</button>
+              </form>
             </section>
           }
         </div>
