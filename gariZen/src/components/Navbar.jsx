@@ -9,7 +9,7 @@ function Navbar() {
     const {menu, setMenu } = appFunc()
   return (
     <>
-        <div className='hidden md:w-full  text-white bg-secondary md:flex md:flex-row'>
+        <div className='hidden md:w-full  text-white bg-primary md:flex md:flex-row'>
             <div className='w-1/3'></div>
             <div className=' w-2/3 flex flex-row justify-center p-2 lg:space-x-3 md:space-x-2'>
                 <Link to='/wishlist'>
@@ -29,7 +29,7 @@ function Navbar() {
                 </Link>
             </div>
         </div>
-        <div className='w-full bg-secondary flex flex-row justify-between items-center p-4 px-5 md:hidden'>
+        <div className='w-full bg-primary flex flex-row justify-between items-center p-4 px-5 md:hidden'>
             <div className='text-white text-2xl flex font-bold'>
                 <Link to='/'>
                     <h1>GariZen</h1>
@@ -40,7 +40,7 @@ function Navbar() {
             </div>
         </div>
         { menu && 
-            <div className='bg-white max-h-screen relative md:hidden p-3 space-y-10 overflow-y-hidden'>
+            <div className='bg-white h-screen relative md:hidden p-3 space-y-10 overflow-y-hidden'>
                 <section className='flex flex-row space-x-1'>
                     <div className='w-1/2 h-64 p-1 rounded-md'>
                         <h4 className='font-bold'>GariZen</h4>
