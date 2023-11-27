@@ -12,7 +12,7 @@ const Landing = () => {
     AOS.init()
   }, [])
   return (
-    <div className='relative w-full h-[550px] z-10'>
+    <div className='relative w-full h-[550px] z-1'>
         <img src='https://images.unsplash.com/photo-1539799139339-50c5fe1e2b1b?auto=format&fit=crop&q=80&w=1742&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='landing' className={ menu ? 'hidden' :'object-cover w-full h-screen md:max-h-[550px] '} />
         <div className={ menu ? 'hidden' :'absolute w-full h-screen md:h-[550px] top-0 bg-gradient-to-r from-black'}></div>
         <div className={ menu ? 'hidden' :'absolute w-full md:w-1/2 h-screen md:h-[550px] top-0 text-white font-bold flex flex-col align-center my-48 md:my-36 px-10 md:px-16'}>
