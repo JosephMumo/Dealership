@@ -6,7 +6,6 @@ import 'aos/dist/aos.css';
 
 const Landing = () => {
   const {menu} = appFunc()
-  console.log(menu)
 
   useEffect(() => {
     AOS.init()

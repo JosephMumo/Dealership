@@ -9,7 +9,6 @@ import { appFunc } from '../context/AppContext'
 function Home() {
   const { toggle1, setToggle1 }  = appFunc()
  
-  console.log('toggle state:', toggle1)
   return (
     <div className='bg-white'>
         <Landing />
