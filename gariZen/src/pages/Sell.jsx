@@ -9,6 +9,32 @@ const Sell = () => {
   const [ active1, setActive1 ] = useState(false)
   const [ active2, setActive2 ] = useState(false)
   const [selectedImage, setSelectedImage] = useState('')
+  const [sellInfo, setSellInfo] = useState({
+    registration: '',
+    make: '',
+    model: '',
+    year: '',
+    mileage: '',
+    price: '',
+    fname: '',
+    lname: '',
+    email: '',
+    phone: ''
+  })
+  const [sellData, setSellData] = useState({})
+
+  const handleChange = (event) => {
+    const { name, value} = event.target
+    setSellInfo(prev => {
+      return ({ ...prev, [name] : value })
+  })
+  console.log(sellInfo)
+  }
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    setSellData(sellInfo)
+    console.log(sellData)
+  }
 
   const handleActive = () => {
     setActive(true)
@@ -65,22 +91,19 @@ const Sell = () => {
               <div className="w-full bg-primary h-16 p-5 rounded-t-lg">
                 <h2 className="text-white text-xl font-semi-bold">Car Details</h2>
               </div>
-              <form className="p-4 grid place-items-center space-y-5">
-                <input type="text" placeholder='Car Registration' className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
-                <select name="make" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none">
+              <form className="p-4 grid place-items-center space-y-5" onSubmit={handleSubmit}>
+                <input onChange={handleChange} name="registration" value={sellInfo.registration} type="text" placeholder='Car Registration' className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
+                <select onChange={handleChange} name="make" value={sellInfo.make} className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none">
                   <option value="" disabled selected hidden>Make</option>
                   <option>Toyota</option>
                   <option>Subaru</option>
                   <option>Nissan</option>
                   <option>Volkswagen</option>
                 </select>
-                <select name="model" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none">
-                  <option value="" disabled selected hidden>Model</option>
-                  <option disabled selected hidden>No data available</option>
-                </select>
-                <input type="date" placeholder="Date of Registration" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
-                <input type="number" placeholder='Mileage' className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
-                <input type="number" placeholder='Reserve Price' className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
+                <input onChange={handleChange} value={sellInfo.model} name="model" placeholder="Model" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
+                <input onChange={handleChange} type="number" value={sellInfo.year} name="year" min="2000" max="2099" placeholder="Date of Registration" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
+                <input onChange={handleChange} name="mileage" value={sellInfo.mileage} type="number" placeholder='Mileage' className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
+                <input onChange={handleChange} name="price" value={sellInfo.price} type="number" min="100000" placeholder='Reserve Price' className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
               </form>
             </section>
           }
@@ -126,13 +149,13 @@ const Sell = () => {
               <div className="w-full bg-primary h-16 p-5 rounded-t-lg">
                 <h2 className="text-white text-xl font-semi-bold">Owner Contact</h2>
               </div>
-              <form className="p-4 grid place-items-center space-y-5">
-                <input type="text" placeholder="First Name" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
-                <input type="text" placeholder="Last Name" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
-                <input type="phone" placeholder="Phone" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
-                <input type="email" placeholder="Email" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
+              <form className="p-4 grid place-items-center space-y-5" onSubmit={handleSubmit}>
+                <input onChange={handleChange} name="fname" value={sellInfo.fname} type="text" placeholder="First Name" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
+                <input onChange={handleChange} name="lname" value={sellInfo.lname} type="text" placeholder="Last Name" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
+                <input onChange={handleChange} name="phone" value={sellInfo.phone} type="phone" placeholder="Phone" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
+                <input onChange={handleChange} name="email" value={sellInfo.email} type="email" placeholder="Email" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
                 <label htmlFor="checkbox" className="text-start">Read and Agreed to the Terms and Conditions.</label>
-                <input type="checkbox" id="checkbox" className="bg-basic" />
+                <input onChange={e => e.target.checked} name="terms" type="checkbox" id="checkbox" className="bg-basic" />
                 <button className="py-1 bg-primary text-white px-5 rounded-2xl">Submit</button>
               </form>
             </section>
