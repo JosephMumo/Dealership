@@ -8,7 +8,7 @@ const Sell = () => {
   const [ active, setActive ] = useState(true)
   const [ active1, setActive1 ] = useState(false)
   const [ active2, setActive2 ] = useState(false)
-  const [selectedImage, setSelectedImage] = useState('')
+  const [selectedImage, setSelectedImage] = useState(null)
   const [sellInfo, setSellInfo] = useState({
     registration: '',
     make: '',
@@ -34,6 +34,7 @@ const Sell = () => {
     event.preventDefault()
     setSellData(sellInfo)
     console.log(sellData)
+    console.log(selectedImage)
   }
 
   const handleActive = () => {
@@ -154,9 +155,7 @@ const Sell = () => {
                 <input onChange={handleChange} name="lname" value={sellInfo.lname} type="text" placeholder="Last Name" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
                 <input onChange={handleChange} name="phone" value={sellInfo.phone} type="phone" placeholder="Phone" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
                 <input onChange={handleChange} name="email" value={sellInfo.email} type="email" placeholder="Email" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
-                <label htmlFor="checkbox" className="text-start">Read and Agreed to the Terms and Conditions.</label>
-                <input onChange={e => e.target.checked} name="terms" type="checkbox" id="checkbox" className="bg-basic" />
-                <button className="py-1 bg-primary text-white px-5 rounded-2xl">Submit</button>
+                <button className="py-2 bg-primary text-white px-7 rounded-2xl">Submit</button>
               </form>
             </section>
           }
