@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import { appFunc } from '../context/AppContext'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 
 
 const Landing = () => {
@@ -17,8 +18,12 @@ const Landing = () => {
         <div className={ menu ? 'hidden' :'absolute w-full md:w-1/2 h-screen md:h-[550px] top-0 text-white font-bold flex flex-col align-center my-48 md:my-36 px-10 md:px-16'}>
           <h1 data-aos='zoom-in' className='text-3xl md:text-4xl '>Where Every Mile Feels<br /> Like a Pleasure – Explore Our <br /> Premium Car Collection Now</h1>
           <section data-aos='zoom-in' className='flex flex-row items-center text-white my-7 space-x-2 md:space-x-4'>
-            <button className='bg-primary text-white p-2 px-4 rounded-3xl'>Browse Cars</button>
-            <button className='bg-inherit p-2 px-4 rounded-3xl text-white outline-dotted hover:outline outline-primary'>Sell your car</button>
+            <Link to='/cars'>
+              <button className='bg-primary text-white p-2 px-4 rounded-3xl'>Browse Cars</button>
+            </Link>
+            <Link to='/sell'>
+              <button className='bg-inherit p-2 px-4 rounded-3xl text-white outline-dotted hover:outline outline-primary'>Sell your car</button>
+            </Link>
           </section>
         </div>
     </div>

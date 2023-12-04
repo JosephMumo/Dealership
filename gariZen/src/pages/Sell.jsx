@@ -153,7 +153,7 @@ const Sell = () => {
                 <input onChange={handleChange} name="lname" value={sellInfo.lname} type="text" placeholder="Last Name" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
                 <input onChange={handleChange} name="phone" value={sellInfo.phone} type="phone" placeholder="Phone" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
                 <input onChange={handleChange} name="email" value={sellInfo.email} type="email" placeholder="Email" className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
-                <button className="py-2 bg-primary text-white px-7 rounded-2xl">Submit</button>
+                <button className="py-2 bg-primary text-white px-7 rounded-md">Submit</button>
               </form>
             </section>
           }

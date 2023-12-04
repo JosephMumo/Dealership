@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Dropdown } from 'flowbite-react'
 import { LuMenu } from 'react-icons/lu'
 import { AiOutlineClose } from 'react-icons/ai'
 import { appFunc } from '../context/AppContext'
