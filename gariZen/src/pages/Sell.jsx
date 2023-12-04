@@ -33,8 +33,6 @@ const Sell = () => {
   const handleSubmit = (event) => {
     event.preventDefault()
     setSellData(sellInfo)
-    console.log(sellData)
-    console.log(selectedImage)
   }
 
   const handleActive = () => {

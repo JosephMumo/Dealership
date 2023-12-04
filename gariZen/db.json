@@ -254,5 +254,12 @@
       "message": "Another test here.",
       "id": 4
     }
+  ],
+  "Subscribers": [
+    [],
+    {
+      "subscription": "joe@gmail.com",
+      "id": 2
+    }
   ]
 }
