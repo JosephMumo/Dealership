@@ -17,52 +17,52 @@ const PopularCategories = () => {
     <div className='py-2 px-5 space-y-2'>
         <h2 className=" text-primary font-semibold text-lg">Popular Categories</h2>
         <hr />
-        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center space-y-2'>
-            <section className='w-auto h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
+        <div className='overflow-x-scroll scrollbar-hide whitespace-nowrap flex space-y-2 space-x-5'>
+            <section className='w-32 h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
                 <img src={steer} alt='1' />
                 <p className='text-base mt-2 '>Interior</p>
             </section>
-            <section className='w-auto h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
+            <section className='w-32 h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
                 <img src={turbo} alt='1' />
                 <p className='text-base mt-2 '>Turbos</p>
             </section>
-            <section className='w-auto h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
+            <section className='w-32 h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
                 <img src={lighting} alt='1' />
                 <p className='text-base mt-2 '>Lighting</p>
             </section>
-            <section className='w-auto h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
+            <section className='w-32 h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
                 <img src={intercooler} alt='1' />
                 <p className='text-base mt-2'>Intercoolers</p>
             </section>
-            <section className='w-auto h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
+            <section className='w-32 h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
                 <img src={brake} alt='1' />
                 <p className='text-base mt-2 '>Brakes</p>
             </section>
-            <section className='w-auto h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
+            <section className='w-32 h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
                 <img src={EngineOil} alt='1' />
                 <p className='text-base mt-2 '>Engine Oils</p>
             </section>
-            <section className='w-auto h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
+            <section className='w-32 h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
                 <img src={door} alt='1' />
                 <p className='text-base mt-2'>Exterior</p>
             </section>
-            <section className='w-auto h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
+            <section className='w-32 h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
                 <img src={grill} alt='1' />
                 <p className='text-base mt-2'>Grills</p>
             </section>
-            <section className='w-auto h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
+            <section className='w-32 h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
                 <img src={timing} alt='1' />
                 <p className='text-base mt-2 '>Timings</p>
             </section>
-            <section className='w-auto h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
+            <section className='w-32 h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
                 <img src={accelerator} alt='1' />
                 <p className='text-base mt-2'>Perfomance</p>
             </section>
-            <section className='w-auto h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
+            <section className='w-32 h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
                 <img src={airfilter} alt='1' />
                 <p className='text-base mt-2'>Air Filters</p>
             </section>
-            <section className='w-auto h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
+            <section className='w-32 h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
                 <img src={gauges} alt='1' />
                 <p className='text-base mt-2'>Gauges</p>
             </section>
