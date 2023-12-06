@@ -11,13 +11,24 @@ import timing from '../images/timing.png'
 import accelerator from '../images/accelerator.png'
 import airfilter from '../images/airfilter.png'
 import gauges from '../images/gauges.png'
+import { CiCircleChevRight, CiCircleChevLeft } from "react-icons/ci";
 
 const PopularCategories = () => {
+    const scrollLeft = () => {
+        let slider = document.getElementById('slider')
+        slider.scrollLeft = slider.scrollLeft - 500
+    }
+    const scrollRight = () => {
+        let slider = document.getElementById('slider')
+        slider.scrollLeft = slider.scrollLeft + 500
+    }
   return (
-    <div className='py-2 px-5 space-y-2'>
-        <h2 className=" text-primary font-semibold text-lg">Popular Categories</h2>
-        <hr />
-        <div className='overflow-x-scroll scrollbar-hide whitespace-nowrap flex space-y-2 space-x-5'>
+    <div className='relative py-2 px-5 space-y-2'>
+        <h2 className=" text-primary font-semibold text-lg relative">Categories</h2>
+        <hr className='relative' />
+        <CiCircleChevLeft onClick={scrollLeft} size={28} className='absolute left-1 xl:hidden ' />
+        <CiCircleChevRight onClick={scrollRight} size={28} className='absolute right-1 xl:hidden' />
+        <div id='slider' className='overflow-x-scroll scrollbar-hide scroll-smooth  whitespace-nowrap flex space-y-2 space-x-5 min-w-screen'>
             <section className='w-32 h-auto grid place-items-center p-3 hover:text-primary cursor-pointer'>
                 <img src={steer} alt='1' />
                 <p className='text-base mt-2 '>Interior</p>
