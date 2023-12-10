@@ -235,15 +235,21 @@
       "name": "Company23® - Sundial Bearing Carrier Tool",
       "price": 44.96,
       "stock": 256,
-      "imgUrl": ["https://rubiktheme.com/demo/rb_sparks_demo/68-home_default/customizable-mug.jpg", "https://rubiktheme.com/demo/rb_sparks_demo/69-small_default/customizable-mug.jpg"],
+      "imgUrl": [
+        "https://rubiktheme.com/demo/rb_sparks_demo/68-home_default/customizable-mug.jpg",
+        "https://rubiktheme.com/demo/rb_sparks_demo/69-small_default/customizable-mug.jpg"
+      ],
       "description": "Allows removal and installation of transmission and differential bearing carriers A.K.A. sundial Replace differentials, axle seals, set bearing preload, and other related jobsOperate with your favorite 1/2 drive ratcheting socket wrenchWill not marr, crack, or damage sundials like other methodsCNC cut from high grade carbon steel and hand welded in WisconsinCrafted to the toughest standards Superior in durability and reliability Right tool to get the job done right the first time"
     },
     {
       "id": 2,
       "name": "Cardone Reman® - Secondary Air Injection Pump with 90 Degree Inlet Port",
-      "price": 12.90,
+      "price": 12.9,
       "stock": 100,
-      "imgUrl": ["https://rubiktheme.com/demo/rb_sparks_demo/70-small_default/hummingbird-notebook.jpg", "https://rubiktheme.com/demo/rb_sparks_demo/72-small_default/hummingbird-notebook.jpg"],
+      "imgUrl": [
+        "https://rubiktheme.com/demo/rb_sparks_demo/70-small_default/hummingbird-notebook.jpg",
+        "https://rubiktheme.com/demo/rb_sparks_demo/72-small_default/hummingbird-notebook.jpg"
+      ],
       "description": "100% testing of all units guarantees reliable performance every time High temperature grease extends bearing life, resulting in longer pump life New carbon shoes/vanes on every unit ensure accurate air output to meet today's stringent emissions standards"
     },
     {
@@ -251,7 +257,10 @@
       "name": "EBC® - Redstuff Ceramic Low Dust Brake Pads",
       "price": 60.66,
       "stock": 267,
-      "imgUrl": ["https://rubiktheme.com/demo/rb_sparks_demo/66-small_default/brown-bear-notebook.jpg", "https://rubiktheme.com/demo/rb_sparks_demo/67-small_default/brown-bear-notebook.jpg"],
+      "imgUrl": [
+        "https://rubiktheme.com/demo/rb_sparks_demo/66-small_default/brown-bear-notebook.jpg",
+        "https://rubiktheme.com/demo/rb_sparks_demo/67-small_default/brown-bear-notebook.jpg"
+      ],
       "description": "Fits over the factory dashboard Designed specifically for your vehicle Manufactured from tough ABS plastic for extra durability Vacuum molded for a perfect fit Secured with silicone adhesive - no drilling or cutting required Easy-to-follow instructions are included Proudly crafted in the USA"
     },
     {
@@ -259,7 +268,10 @@
       "name": "Power Stop® - 1-Click Z23 Evolution Sport Drilled and Slotted Brake Kit",
       "price": 109.57,
       "stock": 346,
-      "imgUrl": ["https://rubiktheme.com/demo/rb_sparks_demo/64-small_default/mountain-fox-notebook.jpg", "https://rubiktheme.com/demo/rb_sparks_demo/65-small_default/mountain-fox-notebook.jpg"],
+      "imgUrl": [
+        "https://rubiktheme.com/demo/rb_sparks_demo/64-small_default/mountain-fox-notebook.jpg",
+        "https://rubiktheme.com/demo/rb_sparks_demo/65-small_default/mountain-fox-notebook.jpg"
+      ],
       "description": "Superior ceramic pad compounds resist heat buildup, dust, and squealing Ceramic pad compounds wear slower and last longer than OEM equipment Ceramic pads eliminate squealing under the most extreme cold or hot temperatures EBC lowest dust fast street pad with 15% brake improvement Capable of repeated heavy brake use without brake “Fall-Off” Very minimal disc or rotor damage characteristics Superb material for Prestige imports European and Asian cars ECE R 90 type approved for most cars Features red brake in surface coating for instant safe braking after install Sold as a set for two wheels"
     },
     {
@@ -267,23 +279,32 @@
       "name": "Coverlay® - Dash Pad",
       "price": 15.41,
       "stock": 200,
-      "imgUrl": ["https://rubiktheme.com/demo/rb_sparks_demo/62-small_default/pack-mug-framed-poster.jpg", "https://rubiktheme.com/demo/rb_sparks_demo/63-small_default/pack-mug-framed-poster.jpg"],
+      "imgUrl": [
+        "https://rubiktheme.com/demo/rb_sparks_demo/62-small_default/pack-mug-framed-poster.jpg",
+        "https://rubiktheme.com/demo/rb_sparks_demo/63-small_default/pack-mug-framed-poster.jpg"
+      ],
       "description": "A perfect combination of OE replacement rotors and high performance ceramic pads Higher coefficient of friction than OE Low dust ceramic formula for superior braking power and cleaner wheels Powder coated backing plate for corrosion resistance and longer lifespan Rubberized shims provide great noise insulation Chamfered and slotted like OE pad for noise-free braking Pad surfaces are thermal scorched for fast break-in"
     },
     {
       "id": 6,
       "name": "ASANTI® - ABL-39 MOGUL Battleship Gray",
-      "price": 395.00,
+      "price": 395,
       "stock": 84,
-      "imgUrl": ["https://rubiktheme.com/demo/rb_sparks_demo/59-small_default/hummingbird-vector-graphics.jpg", "https://rubiktheme.com/demo/rb_sparks_demo/61-small_default/hummingbird-vector-graphics.jpg"],
+      "imgUrl": [
+        "https://rubiktheme.com/demo/rb_sparks_demo/59-small_default/hummingbird-vector-graphics.jpg",
+        "https://rubiktheme.com/demo/rb_sparks_demo/61-small_default/hummingbird-vector-graphics.jpg"
+      ],
       "description": "Transform your vehicle's appearance to the next level Built from 6061 T6 forged aluminum for everlasting durability Lightweight yet extremely tough construction Impeccable, jaw-dropping design Trend-setting finish for a really opulent look Extreme deep lip concave All bolts are made with Grade 8 material"
     },
     {
       "id": 7,
       "name": "VISION OFF-ROAD® - 402 RIOT Gloss Red with Milled Accents",
-      "price": 307.00,
+      "price": 307,
       "stock": 67,
-      "imgUrl": ["https://rubiktheme.com/demo/rb_sparks_demo/57-small_default/brown-bear-vector-graphics.jpg","https://rubiktheme.com/demo/rb_sparks_demo/58-small_default/brown-bear-vector-graphics.jpg"],
+      "imgUrl": [
+        "https://rubiktheme.com/demo/rb_sparks_demo/57-small_default/brown-bear-vector-graphics.jpg",
+        "https://rubiktheme.com/demo/rb_sparks_demo/58-small_default/brown-bear-vector-graphics.jpg"
+      ],
       "description": "Engineered to combine exclusive style with unsurpassed performance Perfect to customize the appearance of your truck or SUV Made using advanced technology for maximum rigidity Proven to withstand demanding off-road conditions"
     },
     {
@@ -291,7 +312,10 @@
       "name": "Lumen® - Custom Headlights",
       "price": 20.46,
       "stock": 125,
-      "imgUrl": ["https://rubiktheme.com/demo/rb_sparks_demo/55-small_default/mountain-fox-vector-graphics.jpg", "https://rubiktheme.com/demo/rb_sparks_demo/56-small_default/mountain-fox-vector-graphics.jpg"],
+      "imgUrl": [
+        "https://rubiktheme.com/demo/rb_sparks_demo/55-small_default/mountain-fox-vector-graphics.jpg",
+        "https://rubiktheme.com/demo/rb_sparks_demo/56-small_default/mountain-fox-vector-graphics.jpg"
+      ],
       "description": "Cutting-edge light design for improved visibility Thoroughly tested to deliver years of dependable performance Designed to provide trouble-free installation Offered at a budget-friendly price"
     },
     {
@@ -299,31 +323,43 @@
       "name": "Torxe™ - 3.5 X2 Series Oval LED Bull Bar with Skid Plate",
       "price": 30.46,
       "stock": 365,
-      "imgUrl": ["https://rubiktheme.com/demo/rb_sparks_demo/53-small_default/hummingbird-cushion.jpg", "https://rubiktheme.com/demo/rb_sparks_demo/54-small_default/hummingbird-cushion.jpg"],
+      "imgUrl": [
+        "https://rubiktheme.com/demo/rb_sparks_demo/53-small_default/hummingbird-cushion.jpg",
+        "https://rubiktheme.com/demo/rb_sparks_demo/54-small_default/hummingbird-cushion.jpg"
+      ],
       "description": "Heavy-duty protection for bumper and lower grille Gives your truck a rugged, ready for the trail look Beefy 3.5” Oval Tubes Mandrel bent tubes to maintain tube diameter and premium appearance Integral skid plate for undercarriage protection Manufactured from high-grade steel Fine textured powder coated black for durability and exceptional appearance Goes perfectly with other tubular accessories like side steps and bed rails Easy bolt-on installation requires no drilling Backed by a 3-year limited warranty"
     },
     {
       "id": 10,
       "name": "Rotomaster® - Turbocharger",
-      "price": 3245.50,
+      "price": 3245.5,
       "stock": 659,
-      "imgUrl": ["https://rubiktheme.com/demo/rb_sparks_demo/50-small_default/brown-bear-cushion.jpg", "https://rubiktheme.com/demo/rb_sparks_demo/51-small_default/brown-bear-cushion.jpg"],
+      "imgUrl": [
+        "https://rubiktheme.com/demo/rb_sparks_demo/50-small_default/brown-bear-cushion.jpg",
+        "https://rubiktheme.com/demo/rb_sparks_demo/51-small_default/brown-bear-cushion.jpg"
+      ],
       "description": "Heavy-duty protection for bumper and lower grille Gives your truck a rugged, ready for the trail look Beefy 3.5” Oval Tubes Mandrel bent tubes to maintain tube diameter and premium appearance Integral skid plate for undercarriage protection Manufactured from high-grade steel Fine textured powder coated black for durability and exceptional appearance Goes perfectly with other tubular accessories like side steps and bed rails Easy bolt-on installation requires no drilling Backed by a 3-year limited warranty"
     },
     {
       "id": 11,
       "name": "Cardone Reman® - Throttle Body",
-      "price": 550.00,
+      "price": 550,
       "stock": 368,
-      "imgUrl": ["https://rubiktheme.com/demo/rb_sparks_demo/32-small_default/the-best-is-yet-to-come-framed-poster.jpg", "https://rubiktheme.com/demo/rb_sparks_demo/33-small_default/the-best-is-yet-to-come-framed-poster.jpg"],
+      "imgUrl": [
+        "https://rubiktheme.com/demo/rb_sparks_demo/32-small_default/the-best-is-yet-to-come-framed-poster.jpg",
+        "https://rubiktheme.com/demo/rb_sparks_demo/33-small_default/the-best-is-yet-to-come-framed-poster.jpg"
+      ],
       "description": "These products are guaranteed to fit and function like the original — at a fraction of the typical market price 100% computerized testing of motor, throttle position sensor and articulation ensures reliable and consistent performance Each unit is disassembled and meticulously inspected. Every component is inspected, remanufactured or replaced ensuring a durable, high-quality product Specialized component cleaning process prevents the throttle bore surface from being deformed and ensures optimum airflow"
     },
     {
       "id": 12,
       "name": "Standard® - Intermotor™ Turbocharger",
-      "price": 531.50,
+      "price": 531.5,
       "stock": 429,
-      "imgUrl": ["https://rubiktheme.com/demo/rb_sparks_demo/48-small_default/mountain-fox-cushion.jpg", "https://rubiktheme.com/demo/rb_sparks_demo/49-small_default/mountain-fox-cushion.jpg"],
+      "imgUrl": [
+        "https://rubiktheme.com/demo/rb_sparks_demo/48-small_default/mountain-fox-cushion.jpg",
+        "https://rubiktheme.com/demo/rb_sparks_demo/49-small_default/mountain-fox-cushion.jpg"
+      ],
       "description": "Designed to deliver trouble-free, consistent performance Right for your vehicle and lifestyle Made from high-quality materials for ultimate durability Manufactured to meet or exceed strict quality requirements"
     },
     {
@@ -331,31 +367,43 @@
       "name": "TYC® - Dual Radiator and Condenser Fan",
       "price": 614.94,
       "stock": 234,
-      "imgUrl": ["https://rubiktheme.com/demo/rb_sparks_demo/40-small_default/mug-the-best-is-yet-to-come.jpg", "https://rubiktheme.com/demo/rb_sparks_demo/41-small_default/mug-the-best-is-yet-to-come.jpg"],
+      "imgUrl": [
+        "https://rubiktheme.com/demo/rb_sparks_demo/40-small_default/mug-the-best-is-yet-to-come.jpg",
+        "https://rubiktheme.com/demo/rb_sparks_demo/41-small_default/mug-the-best-is-yet-to-come.jpg"
+      ],
       "description": "OE quality at an affordable price Direct replacement Installs the same as factory unit Same dimensions as OE part Same gauge material as OE Installation requires no modifications Limited lifetime warranty"
     },
     {
       "id": 14,
       "name": "Spectra Premium® - Radiator",
-      "price": 1435.00,
+      "price": 1435,
       "stock": 726,
-      "imgUrl": ["https://rubiktheme.com/demo/rb_sparks_demo/38-small_default/today-is-a-good-day-framed-poster.jpg", "https://rubiktheme.com/demo/rb_sparks_demo/39-small_default/today-is-a-good-day-framed-poster.jpg"],
+      "imgUrl": [
+        "https://rubiktheme.com/demo/rb_sparks_demo/38-small_default/today-is-a-good-day-framed-poster.jpg",
+        "https://rubiktheme.com/demo/rb_sparks_demo/39-small_default/today-is-a-good-day-framed-poster.jpg"
+      ],
       "description": "All models are validated for fit, form, and function before released into the market Manufactured under ISO 9001 / TS 16949 quality system State of the art packaging for all produced radiators All models are equipped with accessory packs to accommodate various original equipment, models All models are tested in an endurance simulator in order to ensure that they exceed original equipment standards All transmission & engine oil coolers are designed to meet or exceed original equipment standards All complete radiators are 100% leak tested Only the highest grades of materials are used in their production to ensure product longevity"
     },
     {
       "id": 15,
       "name": "ACDelco® - Genuine GM Parts™ Cruise Control Switch",
-      "price": 125.00,
+      "price": 125,
       "stock": 100,
-      "imgUrl": ["https://rubiktheme.com/demo/rb_sparks_demo/35-small_default/the-adventure-begins-framed-poster.jpg", "https://rubiktheme.com/demo/rb_sparks_demo/37-small_default/the-adventure-begins-framed-poster.jpg"],
+      "imgUrl": [
+        "https://rubiktheme.com/demo/rb_sparks_demo/35-small_default/the-adventure-begins-framed-poster.jpg",
+        "https://rubiktheme.com/demo/rb_sparks_demo/37-small_default/the-adventure-begins-framed-poster.jpg"
+      ],
       "description": "Designed to deliver trouble-free, consistent performance Right for your vehicle and lifestyle Made from high-quality materials for ultimate durability Manufactured to meet or exceed strict quality requirements"
     },
     {
       "id": 16,
       "name": "TRQ® - Cylinder Head",
-      "price": 495.00,
+      "price": 495,
       "stock": 345,
-      "imgUrl": ["https://rubiktheme.com/demo/rb_sparks_demo/45-small_default/mug-today-is-a-good-day.jpg", "https://rubiktheme.com/demo/rb_sparks_demo/46-small_default/mug-today-is-a-good-day.jpg"],
+      "imgUrl": [
+        "https://rubiktheme.com/demo/rb_sparks_demo/45-small_default/mug-today-is-a-good-day.jpg",
+        "https://rubiktheme.com/demo/rb_sparks_demo/46-small_default/mug-today-is-a-good-day.jpg"
+      ],
       "description": "Designed to deliver trouble-free, consistent performance Right for your vehicle and lifestyle Made from high-quality materials for ultimate durability Manufactured to meet or exceed strict quality requirements"
     }
   ],
@@ -383,6 +431,12 @@
       "email": "janedoe@gmail.com",
       "message": "Another test here.",
       "id": 4
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": 5
     }
   ],
   "Subscribers": [

@@ -93,7 +93,7 @@ const Sell = () => {
               <form className="p-4 grid place-items-center space-y-5" onSubmit={handleSubmit}>
                 <input onChange={handleChange} name="registration" value={sellInfo.registration} type="text" placeholder='Car Registration' className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none" />
                 <select onChange={handleChange} name="make" value={sellInfo.make} className="bg-basic w-[90%] rounded-sm h-10 px-3 outline-none">
-                  <option value="" disabled selected hidden>Make</option>
+                  <option value="" disabled default hidden>Make</option>
                   <option>Toyota</option>
                   <option>Subaru</option>
                   <option>Nissan</option>

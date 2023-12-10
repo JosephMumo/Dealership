@@ -51,7 +51,7 @@ const Footer = () => {
                     fuel vouchers, campaigns, and expert-written tips to help you keep your car in excellent shape.
                 </p>
                 <form className='my-3 flex space-x-1 md:space-x-3' onSubmit={handleSubs}>
-                    <input onChange={subsChange} name='subscription' value={subUser.subscription} type="email" placeholder='Your Email Address' className=' md:px-4 py-1 w-42 md:w-56 rounded-md border outline-none' />
+                    <input onChange={subsChange} name='subscription' value={subUser.subscription} type="email" placeholder='Your Email Address' className=' md:px-4 p-1 w-42 md:w-56 rounded-md border outline-none' />
                     <button className='bg-primary rounded-md p-1 px-4 text-white'>Subscribe</button>
                 </form>
             </section>
