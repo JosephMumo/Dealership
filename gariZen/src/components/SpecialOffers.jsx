@@ -48,11 +48,11 @@ const SpecialOffers = () => {
                     <h1 className='text-center'>{item.name}</h1>
                     <section className='w-full flex justify-between items-center'>
                         <h4 className ="font-bold">${item.price}</h4>
-                        <button onClick={()=> alert(`Added ${item.name} to your cart`)} className="group-hover:bg-primary rounded-full p-2">
+                        <button onClick={()=> alert(`Added ${item.name} to your cart`)} className="group-hover:bg-primary transition delay-100 rounded-full p-2">
                             <CiShoppingCart size={18} />
                         </button>
                     </section>
-                    <section className='group-hover:flex flex-col space-y-2 p-1 absolute top-2 right-4 hidden group'>
+                    <section className='group-hover:flex flex-col space-y-2 p-1 absolute top-2 right-4 hidden group transition decoration-slate-300'>
                         <button onClick={() => alert(`${item.name} added to your wishlist!`)} className='rounded-full p-2 bg-neutral-100 hover:bg-primary'>
                             <CiHeart size={18} />
                         </button>

@@ -17,7 +17,7 @@ const Navmain = () => {
             <h4 className='text-lg font-bold'>Shop Parts</h4>
         </Link>
         <div>
-            <input type='text' name='search' id='search' placeholder='Find a Rides car' className='bg-basic py-1 px-2 md:24 lg:w-64 outline-none' />
+            <input type='text' name='search' id='search' placeholder='Find your next ride' className='bg-basic py-1 px-2 md:24 lg:w-64 outline-none' />
         </div>
         <div className='text-black font-semibold'>
             <p>(+254)718304580</p>
