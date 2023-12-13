@@ -27,6 +27,7 @@ function Spares() {
         :
         <Cart
           cart={cart} 
+          setShowCart={setShowCart}
         />
       }
       <Footer />
