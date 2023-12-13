@@ -20,7 +20,7 @@ const Cart = (props) => {
                             <br />
                             <h2 className='font-bold'>${item.price}</h2>
                         </section>
-                        <div className='w-[10%] grid place-items-center'>
+                        <div className='w-[10%] grid place-items-center' >
                             <MdDeleteOutline className='hover:scale-125 cursor-hover' size={24} color='black' />
                         </div>
                     </div>
