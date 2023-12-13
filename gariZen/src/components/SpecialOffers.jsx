@@ -11,13 +11,19 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 Modal.setAppElement("#root")
 
-const SpecialOffers = () => {
+const SpecialOffers = (props) => {
+    const {cart, setCart} = props
     const [ modalIsOpen, setModalIsOpen ] = useState(false);
     const [selected, setSelected] = useState(null)
 
     const openModal = (item) => {
         setSelected(item)
         setModalIsOpen(true)
+    }
+
+    const addToCart = (item) => {
+        setCart(prev => [...prev, item])
+        alert(`Added ${item.name} to your cart`)
     }
 
     const closeModal = () => {
@@ -43,12 +49,12 @@ const SpecialOffers = () => {
         <div className='w-full  grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 overflow-y-hidden'>
             {data?.data.map(item => {
                 return (
-                <div key={item.id} onClick={() => openModal(item)} className='bg-white w-80 md:w-90 h-64 group transition-all ease-in-out delay-200 relative px-5 mt-5 group cursor-pointer grid place-items-center border border-grey'>
+                <div key={item.id} className='bg-white w-80 md:w-90 h-64 group transition-all ease-in-out delay-200 relative px-5 mt-5 group cursor-pointer grid place-items-center border border-grey'>
                     <img className='w-24' src={item.imgUrl[0]} alt='' />
                     <h1 className='text-center'>{item.name}</h1>
                     <section className='w-full flex justify-between items-center'>
                         <h4 className ="font-bold">${item.price}</h4>
-                        <button onClick={()=> alert(`Added ${item.name} to your cart`)} className="group-hover:bg-primary transition delay-100 rounded-full p-2">
+                        <button onClick={()=> addToCart(item)} className="group-hover:bg-primary transition delay-100 rounded-full p-2">
                             <CiShoppingCart size={18} />
                         </button>
                     </section>
@@ -56,7 +62,7 @@ const SpecialOffers = () => {
                         <button onClick={() => alert(`${item.name} added to your wishlist!`)} className='rounded-full p-2 bg-neutral-100 hover:bg-primary'>
                             <CiHeart size={18} />
                         </button>
-                        <button onClick={openModal} className='rounded-full p-2 bg-neutral-100 hover:bg-primary'>
+                        <button onClick={() => openModal(item)} className='rounded-full p-2 bg-neutral-100 hover:bg-primary'>
                             <HiOutlineViewfinderCircle size={18} />
                         </button>
                     </section>
@@ -90,7 +96,7 @@ const SpecialOffers = () => {
                         <h3 className='font-bold text-3xl my-2'>${selected.price}</h3>
                         <p>Availability: Stock <strong>{selected.stock}</strong></p>
                         <section className='flex w-full align-middle space-x-4'>
-                            <button className='py-2 px-4 bg-primary'> Add to Cart</button>
+                            <button onClick={() => addToCart(item)} className='py-2 px-4 bg-primary z-20'> Add to Cart</button>
                             <input type='number' max={selected.stock} min={1} className='outline outline-1 px-2' />
                         </section>
                         <p>Availability: In Stock</p>
