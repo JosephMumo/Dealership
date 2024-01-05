@@ -13,7 +13,7 @@ function Home() {
     <div className='bg-white'>
         <Landing />
         <div className='flex justify-center bg-basic rounded-3xl text-sm w-72 relative mt-56 md:mt-10 mx-auto space-x-2 py-2'>
-          <button onClick={() => setToggle1(true)} className={toggle1 ? 'py-1 px-4 bg-secondary  rounded-3xl text-white' : 'py-1 px-4 text-primary rounded-3xl'}>Featured Cars</button>
+          <button onClick={() => setToggle1(true)} className={toggle1 ? "py-1 px-4 bg-secondary  rounded-3xl text-white" : 'py-1 px-4 text-primary rounded-3xl'}>Featured Cars</button>
           <button onClick={() => setToggle1(false)} className={!toggle1 ? 'py-1 px-4 bg-secondary text-white rounded-3xl' :'py-1 px-4 text-primary rounded-3xl'}>Recent Listing</button>
         </div>
         { toggle1 && <Featured /> }

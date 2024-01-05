@@ -30,13 +30,13 @@ function Cars() {
   }
   if(isLoading) {
     return(
-      <div className='text-lg font-bold'>
+      <div className='text-lg font-bold w-full py-2 text-center'>
         Loading...
       </div>
     )
   } else if (isError){
     return(
-      <div className='text-lg font-bold'>
+      <div className='text-lg font-bold w-full py-2 text-center'>
         `Error ${error}`
       </div>
     )
