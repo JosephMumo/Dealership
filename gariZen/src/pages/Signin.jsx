@@ -2,12 +2,15 @@ import React, { useState } from 'react'
 import { FcGoogle } from "react-icons/fc"
 import  Footer  from '../components/Footer'
 import { appFunc } from '../context/AppContext'
+import { useNavigate } from 'react-router-dom'
 
 const Signin = () => {
   const { signUp, logIn } = appFunc()
   const [ email, setEmail ] = useState('')
   const [ password, setPassword ] = useState('')
   const [ error, setError ] = useState('')
+
+  const navigate = useNavigate()
   
 
   const handleSignUp = async (e) => {
@@ -26,6 +29,7 @@ const Signin = () => {
     try{
       await logIn(email, password)
       clearFields()
+      navigate('/')
     }
     catch(e){
       setError(e)

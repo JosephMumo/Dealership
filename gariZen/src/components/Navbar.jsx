@@ -2,10 +2,16 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { LuMenu } from 'react-icons/lu'
 import { AiOutlineClose } from 'react-icons/ai'
+import { IoIosLogOut } from "react-icons/io";
 import { appFunc } from '../context/AppContext'
 
 function Navbar() {
-    const {menu, setMenu } = appFunc()
+    const {menu, setMenu, user, logOut } = appFunc()
+
+    const handleLogOut = () => {
+        alert('You are about to log out')
+        logOut()
+    }
   return (
     <>
         <div className='hidden md:w-full  text-white bg-primary md:flex md:flex-row'>
@@ -26,6 +32,9 @@ function Navbar() {
                 <Link to='/signin'>
                     <h1>SignIn</h1>
                 </Link>
+            </div>
+            <div className='p-2'>
+                { user && <IoIosLogOut onClick={handleLogOut} color='white' size={24} /> }
             </div>
         </div>
         <div className='w-full bg-primary flex flex-row justify-between items-center p-4 px-5 md:hidden'>

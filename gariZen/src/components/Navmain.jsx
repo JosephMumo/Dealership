@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { appFunc } from '../context/AppContext'
 
 const Navmain = () => {
+    const {user} = appFunc()
   return (
     <div className=' border-b-2 hidden text-black md:flex md:flex-row md:justify-center md:items-center md:space-x-5 lg:space-x-12 md:py-3 md:px-2 lg:px-5 md:bg-white md:w-full'>
         <Link to='/'>
@@ -21,6 +23,9 @@ const Navmain = () => {
         </div>
         <div className='text-black font-semibold'>
             <p>(+254)718304580</p>
+        </div>
+        <div className='text-xs font-bold text-black'>
+            { user && <p>{user.email}</p>}
         </div>
     </div>
   )
