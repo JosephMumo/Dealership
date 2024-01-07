@@ -4,6 +4,8 @@ import  Footer  from '../components/Footer'
 import { appFunc } from '../context/AppContext'
 import { useNavigate } from 'react-router-dom'
 
+
+
 const Signin = () => {
   const { signUp, logIn } = appFunc()
   const [ email, setEmail ] = useState('')

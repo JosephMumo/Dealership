@@ -27,6 +27,7 @@ function Spares() {
         :
         <Cart
           cart={cart} 
+          setCart={setCart}
           setShowCart={setShowCart}
         />
       }

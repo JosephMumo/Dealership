@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { appFunc } from '../context/AppContext'
+import { IoPersonOutline } from "react-icons/io5";
 
 const Navmain = () => {
     const {user} = appFunc()
@@ -25,7 +26,7 @@ const Navmain = () => {
             <p>(+254)718304580</p>
         </div>
         <div className='text-xs font-bold text-black'>
-            { user && <p>{user.email}</p>}
+            { user && <IoPersonOutline size={18} /> }
         </div>
     </div>
   )
